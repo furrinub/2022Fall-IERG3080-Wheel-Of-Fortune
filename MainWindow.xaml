@@ -1,0 +1,187 @@
+﻿<Window x:Class="_2022Fall_IERG3080_Wheel_Of_Fortune.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2022Fall_IERG3080_Wheel_Of_Fortune"
+        mc:Ignorable="d"
+        Title="2022Fall IERG3080 Project Part 1" Height="450" Width="800" ResizeMode="NoResize">
+    <Grid>
+        <TextBlock x:Name="title_text" HorizontalAlignment="Center" Margin="0,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Text="Wheel of Fortune"/>
+        <TextBlock HorizontalAlignment="Left" Margin="49,135,0,0" TextWrapping="Wrap" Text="Money:" VerticalAlignment="Top"/>
+        <Ellipse HorizontalAlignment="Center" Height="320" Stroke="#FFFFD400" VerticalAlignment="Top" Width="320" Margin="0,88,0,0" StrokeThickness="0">
+            <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+                    <GradientStop Color="#FFD400" Offset="0.1"/>
+                    <GradientStop Color="#FCB103" Offset="0.5"/>
+                    <GradientStop Color="#FFD400" Offset="0.9"/>
+                </LinearGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+
+
+        <Canvas Name="pies" HorizontalAlignment="Left" Height="200" Margin="286,135,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.532,0.571">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="22.5"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Path x:Name="pie1" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" Canvas.Left="90" Canvas.Top="75" RenderTransformOrigin="0.5,0.5">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="315"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="pie2" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" RenderTransformOrigin="0.7,0.7" Canvas.Left="29.466" Canvas.Top="37.133" >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="270"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="pie3" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="12.75" Canvas.Top="75.14" HorizontalAlignment="Left" VerticalAlignment="Center">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="225"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="pie4" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="-3.5" Canvas.Top="114.0" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="180"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="pie5" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="12.58" Canvas.Top="152.66" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="135"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="pie6" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="51.18" Canvas.Top="168.52" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="90"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="pie7" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="89.85" Canvas.Top="152.4" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="45"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Path x:Name="pie8" Fill="LightSteelBlue" Data="M0,0 L0,-155 A155,155 0 0 1 109.60155,-109.60155 z" RenderTransformOrigin="0.5,0.5" Canvas.Left="106.05" Canvas.Top="113.7" HorizontalAlignment="Left" VerticalAlignment="Top" >
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <RotateTransform Angle="0"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+
+            <TextBlock x:Name="pie1_num"
+            Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="40" Width="50" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-22.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="pie2_num"
+                Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="-21" Canvas.Top="57" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-67.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="pie3_num"
+                Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="-22" Canvas.Top="145" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-112.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="pie4_num"
+                Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="37" Canvas.Top="204" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-157.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="pie5_num"
+                Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="122" Canvas.Top="199" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-202.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="pie6_num"
+                Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="180" Canvas.Top="145" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-247.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="pie7_num"
+                Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="183" Canvas.Top="61" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-292.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <TextBlock x:Name="pie8_num"
+                Text="0000" RenderTransformOrigin="0.5,0.5" FontSize="18" TextAlignment="Center" Canvas.Left="122" Width="50" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-337.5"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+
+
+        </Canvas>
+        <Button x:Name="stop_button" Content="Stop" Background="#FFF7C63C" BorderBrush="#FF0716FF" Margin="49,259,649,134" Click="StopButtonClick"/>
+        <Button x:Name="start_button" Content="Start" Background="#FFF7C63C" BorderBrush="#FF0716FF" Margin="49,196,649,197" Click="StartButtonClick"/>
+        <TextBlock x:Name="money_text" HorizontalAlignment="Left" Margin="49,155,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top"/>
+        <TextBlock x:Name="profit_indicator" HorizontalAlignment="Left" Margin="122,135,0,0" TextWrapping="Wrap" Text="+10" VerticalAlignment="Top" RenderTransformOrigin="-0.495,0.833"/>
+        <Image HorizontalAlignment="Center" Height="39" Margin="0,74,0,0" VerticalAlignment="Top" Width="40" Source="/tripointer.png"/>
+
+
+    </Grid>
+</Window>

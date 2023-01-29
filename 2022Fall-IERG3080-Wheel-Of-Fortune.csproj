@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>_2022Fall_IERG3080_Wheel_Of_Fortune</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="tripointer.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="tripointer.png" />
+  </ItemGroup>
+
+</Project>

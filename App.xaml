@@ -1,0 +1,9 @@
+﻿<Application x:Class="_2022Fall_IERG3080_Wheel_Of_Fortune.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:_2022Fall_IERG3080_Wheel_Of_Fortune"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
